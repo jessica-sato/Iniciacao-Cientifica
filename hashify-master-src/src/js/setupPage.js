@@ -43,7 +43,7 @@ function regenAnimation() {
             );
             hashObj.update(current_state + saltHex);
             current_state = hashObj.getHash("HEX");
-            
+
             i++;
             if (dontModifyGeneratorElement || i != elementToModify)
                 yield BigInt("0x" + current_state);
@@ -87,6 +87,14 @@ function onChangeGenerator() {
     regenAnimation();
 }
 
+function changeToVotePage(){
+  window.location.href = "voto.html";
+}
+
+function changeToElectionPage(){
+  window.location.href = "eleicao.html";
+}
+
 // Setting up the js events
 $("#hashInputText").change(regenAnimation);
 $("#hashSaltText").change(regenAnimation);
@@ -94,8 +102,10 @@ $("#optAnimate").change(regenAnimation);
 $("#optThinLine").change(regenAnimation);
 $("#optMovingLine").change(regenAnimation);
 $("#updateAnimation").click(regenAnimation);
+$("#goToVotePage").click(changeToVotePage);
+$("#goToElectionPage").click(changeToElectionPage);
 
 $("#chkChangeGenerator").change(onChangeGenerator);
 $("#optnumberToChange").change(regenAnimation);
 
-$('#hashInputText').val("o4FqetQ2Ax1NV/I0LDhudrykb3jXeCE6NuLiPqNcRTI").change();
+//$('#hashInputText').val("").change();
