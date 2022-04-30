@@ -98,4 +98,4 @@ $("#updateAnimation").click(regenAnimation);
 $("#chkChangeGenerator").change(onChangeGenerator);
 $("#optnumberToChange").change(regenAnimation);
 
-$('#hashInputText').val("a78e3f").change();
+$('#hashInputText').val("o4FqetQ2Ax1NV/I0LDhudrykb3jXeCE6NuLiPqNcRTI").change();
