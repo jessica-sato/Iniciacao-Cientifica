@@ -10,7 +10,7 @@ function ascii_hexa(str){
 
 function regenAnimation() {
     //let hash = $('#hashInputText').val();
-    let hash = ascii_hexa($('#hashInputText').val());
+    let hash = ascii_hexa(($('#hashInputText').val()).trim());
     let salt = $('#hashSaltText').val();
 
     let anim1 = hashify.seed(hash, salt);
