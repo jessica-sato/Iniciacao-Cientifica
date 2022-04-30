@@ -1,0 +1,17 @@
+html {
+  width: 400px;
+  height: 400px;
+}
+
+body {
+  width: 95%;
+  height: 95%;
+}
+
+button {
+  margin: 0.2em;
+}
+
+.slightMargin {
+  margin: 0.2em;
+}

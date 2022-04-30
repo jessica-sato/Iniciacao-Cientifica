@@ -1,0 +1,15 @@
+html, body {
+  width: 99%;
+}
+
+button {
+  margin: 0.2em;
+}
+
+.slightMargin {
+  margin: 0.2em;
+}
+
+.preLine {
+  white-space: pre-wrap;
+}

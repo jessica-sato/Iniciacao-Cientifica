@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+  <title>Geração de animações a partir de hashes</title>
+  <script type="text/javascript" src="../libs/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../libs/sha.js"></script>
+</head>
+
+<body style="background: #f3f3f3;">
+  <h1>Biblioteca <i>hashify.js</i></h1>
+  <h2>Geração de animações a partir de hashes</h2>
+
+  <div class="slightMargin">
+    <label for="hashInputText">&nbsp; Hash: </label>
+    <input type="text" size="40" name="hashInputText" id="hashInputText" />
+  </div>
+  <div class="slightMargin">
+    <label for="hashSaltText">&nbsp; Salt: &nbsp; </label>
+    <input type="text" size="40" name="hashSaltText" id="hashSaltText" />
+  </div>
+  <div>
+    <button id="updateAnimation">
+      Forçar atualização da animação
+    </button>
+  </div>
+
+  <div id="svgDiv">
+    <svg id="svg">
+    </svg>
+  </div>
+
+  <div id="msgExt" class="preLine"></div>
+
+  <script type="text/javascript" src="../libs/mo.min.js"></script>
+  <script type="text/javascript" src="../libs/jsbi.mjs"></script>
+  <script type="text/javascript" src="../js/custom_fonts.js"></script>
+  <script type="text/javascript" src="../js/custom_icons.js"></script>
+  <script type="text/javascript" src="../js/hashify.js"></script>
+  <script type="text/javascript" src="../js/setupPage.js"></script>
+</body>
+
+</html>

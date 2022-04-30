@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg3314"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icon07_cloud.svg">
+  <defs
+     id="defs3316" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="22.804348"
+     inkscape:cy="48.438827"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1307"
+     inkscape:window-height="744"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3319">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4105">
+      <g
+         id="g184"
+         transform="matrix(1.25,0,0,-1.25,67.8575,40.80137)">
+        <path
+           d="m 0,0 c 1.452,0.558 3.028,0.864 4.677,0.864 7.2,0 13.037,-5.837 13.037,-13.038 0,-7.201 -5.837,-13.037 -13.037,-13.037 l -40.963,0 c -5.522,0 -10,4.477 -10,10 0,5.522 4.478,10 10,10 2.428,0 4.653,-0.866 6.385,-2.304"
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path186"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g188"
+         transform="matrix(1.25,0,0,-1.25,22.834375,47.32412)">
+        <path
+           d="m 0,0 c 0.239,5.864 5.068,10.544 10.991,10.544 1.821,0 3.538,-0.442 5.051,-1.225"
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path190"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g192"
+         transform="matrix(1.25,0,0,-1.25,39.758125,43.25487)">
+        <path
+           d="m 0,0 c 1.208,7.072 7.368,12.456 14.785,12.456 6.433,0 11.92,-4.049 14.051,-9.738"
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path194"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g196"
+         transform="matrix(1.25,0,0,-1.25,36.104,67.632995)">
+        <path
+           d="M 0,0 20.5,0"
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path198"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g200"
+         transform="matrix(1.25,0,0,-1.25,25.94775,67.632995)">
+        <path
+           d="M 0,0 3.563,0"
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path202"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         sodipodi:nodetypes="csssc"
+         inkscape:connector-curvature="0"
+         id="path3335"
+         d="m 25.253814,45.451763 c 13.131983,-9.596449 14.394673,-10.85914 23.233508,-10.354064 8.838835,0.505077 26.011428,1.515229 28.284271,4.798225 2.272843,3.282996 -45.421382,15.54889 -48.234784,14.394674 -9.848987,-4.04061 -3.282995,-8.838835 -3.282995,-8.838835 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.22624435" />
+    </g>
+  </g>
+</svg>
