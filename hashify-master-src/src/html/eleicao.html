@@ -5,18 +5,18 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="../css/custom.css">
 
-  <title>Geração de animações a partir de hashes</title>
+  <title>Animação da Eleição</title>
   <script type="text/javascript" src="../libs/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../libs/sha.js"></script>
 </head>
 
 <body style="background: #f3f3f3;">
-  <h1>Biblioteca <i>hashify.js</i></h1>
-  <h2>Geração de animações a partir de hashes</h2>
+  <h1>Animação do <i>Hash</i> da Eleição</h1>
+  <h2>Gerado pelo programa <i>hashify</i></h2>
 
   <div class="slightMargin">
     <label for="hashInputText">&nbsp; Hash: </label>
-    <input type="text" size="75" name="hashInputText" id="hashInputText" />
+    <input type="text" size="75" name="hashInputText" id="hashInputText"  placeholder="Escreva o Hash da Eleição Aqui"/>
   </div>
   <div class="slightMargin">
     <label for="hashSaltText">&nbsp; Salt: &nbsp; </label>
@@ -24,9 +24,9 @@
   </div>
   <div class="slightMargin">
     <input type="checkbox" name="optAnimate" id="optAnimate" />
-    <label for="optAnimate">Animar cores e forma</label> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+    <label for="optAnimate">Animar cores e forma</label> &nbsp;  &nbsp;  &nbsp;  &nbsp;
     <input type="checkbox" name="optMovingLine" id="optMovingLine" />
-    <label for="optMovingLine">Quebrar a linha e mover a mesma</label> &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+    <label for="optMovingLine">Quebrar a linha e mover a mesma</label> &nbsp;  &nbsp;  &nbsp;  &nbsp;
   </div>
   <div class="slightMargin">
     <input type="checkbox" name="chkChangeGenerator" id="chkChangeGenerator" />
@@ -37,6 +37,12 @@
   <div>
     <button id="updateAnimation">
       Forçar atualização da animação
+    </button>
+  </div>
+
+  <div>
+    <button id="goToVotePage">
+      Próximo
     </button>
   </div>
 
