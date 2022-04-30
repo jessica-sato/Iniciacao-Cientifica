@@ -13,3 +13,21 @@ button {
 .preLine {
   white-space: pre-wrap;
 }
+
+#updateAnimation{
+  font-weight: bolder;
+  font-size: 16px;
+  color: #646464
+}
+
+#updateAnimation:hover{
+  color: black;
+}
+
+.nextPage{
+  color:  #646464 ;
+}
+
+.nextPage:hover{
+  color:  black;
+}
