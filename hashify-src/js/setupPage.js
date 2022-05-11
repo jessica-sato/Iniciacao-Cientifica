@@ -11,14 +11,17 @@ function ascii_hexa(str){
 function regenAnimation() {
     //let hash = $('#hashInputText').val();
     let hash = ascii_hexa(($('#hashInputText').val()).trim());
-    let salt = $('#hashSaltText').val();
+    //let salt = $('#hashSaltText').val();
+    let salt = "";
 
     let anim1 = hashify.seed(hash, salt);
     anim1.prepAnimation("#svgDiv", [1, 4], [2, 2], { ...DEFAULT_OPTS, x: -175, y: 50 });
 
     let hashalg = "SHA-256";
-    let dontModifyGeneratorElement = !$("#chkChangeGenerator").prop('checked');
-    let elementToModify = parseInt($("#optnumberToChange").val());
+    //let dontModifyGeneratorElement = !$("#chkChangeGenerator").prop('checked');
+    let dontModifyGeneratorElement = false;
+    //let elementToModify = parseInt($("#optnumberToChange").val());
+    let elementToModify = 0;
     var modified_sha_gen = function* () {
         var saltHasher = new jsSHA(
             hashalg,
@@ -51,39 +54,41 @@ function regenAnimation() {
                 yield Add(BigInt("0x" + current_state), BigInt(1));
         }
     }
-    let anim2 = new hashify(modified_sha_gen);
-    let anim2Masks = {
-        ...DEFAULT_OPTS.masks,
-        animate: $("#optAnimate").prop('checked'),
-        thinLine: $("#optThinLine").prop('checked'),
-        movingLine: $("#optMovingLine").prop('checked')
-    };
-    anim2.prepAnimation("#maskedSvgDiv", [1, 4], [2, 2],
-        { ...DEFAULT_OPTS, x: 175, y: 50, masks: anim2Masks });
+    // let anim2 = new hashify(modified_sha_gen);
+    // let anim2Masks = {
+    //     ...DEFAULT_OPTS.masks,
+    //     // animate: $("#optAnimate").prop('checked'),
+    //     // thinLine: $("#optThinLine").prop('checked'),
+    //     // movingLine: $("#optMovingLine").prop('checked')
+    //     animate: true,
+    //     thinLine: false,
+    //     movingLine: true
+    // };
+    // anim2.prepAnimation("#maskedSvgDiv", [1, 4], [2, 2],
+    //     { ...DEFAULT_OPTS, x: 175, y: 50, masks: anim2Masks });
 
     // here we add both timelines to the same timeline (instead of playing them directly)
     //so they are synchronized
     var t = new mojs.Timeline();
     t.add(anim1.timeline);
-    t.add(anim2.timeline);
+    // t.add(anim2.timeline);
     t.play();
 }
 
-$("#optAnimate").prop("checked", true);
-$("#optThinLine").prop("checked", true);
-$("#optMovingLine").prop("checked", true);
+// $("#optAnimate").prop("checked", true);
+// $("#optThinLine").prop("checked", true);
+// $("#optMovingLine").prop("checked", true);
 
-$("#optnumberToChange").val("0");
-$("#optnumberToChange").prop('disabled', true);
+// $("#optnumberToChange").val("0");
+// $("#optnumberToChange").prop('disabled', true);
 
 function onChangeGenerator() {
-    if ($("#chkChangeGenerator").prop('checked')) {
-        $("#optnumberToChange").prop('disabled', false);
-    }
-    else {
-        $("#optnumberToChange").prop('disabled', true);
-    }
-
+    // if ($("#chkChangeGenerator").prop('checked')) {
+    //     $("#optnumberToChange").prop('disabled', false);
+    // }
+    // else {
+    //     $("#optnumberToChange").prop('disabled', true);
+    // }
     regenAnimation();
 }
 
@@ -97,15 +102,15 @@ function changeToElectionPage(){
 
 // Setting up the js events
 $("#hashInputText").change(regenAnimation);
-$("#hashSaltText").change(regenAnimation);
-$("#optAnimate").change(regenAnimation);
-$("#optThinLine").change(regenAnimation);
-$("#optMovingLine").change(regenAnimation);
+// $("#hashSaltText").change(regenAnimation);
+// $("#optAnimate").change(regenAnimation);
+// $("#optThinLine").change(regenAnimation);
+// $("#optMovingLine").change(regenAnimation);
 $("#updateAnimation").click(regenAnimation);
 $("#goToVotePage").click(changeToVotePage);
 $("#goToElectionPage").click(changeToElectionPage);
 
-$("#chkChangeGenerator").change(onChangeGenerator);
-$("#optnumberToChange").change(regenAnimation);
+// $("#chkChangeGenerator").change(onChangeGenerator);
+// $("#optnumberToChange").change(regenAnimation);
 
 //$('#hashInputText').val("").change();

@@ -16,8 +16,9 @@
 
   <div class="slightMargin">
     <label for="hashInputText">&nbsp; Hash: </label>
-    <input type="text" size="75" name="hashInputText" id="hashInputText" placeholder="Escreva o Hash do Voto Aqui"/>
+    <input type="text" size="75" pattern="[^ ]*" maxlength="43" name="hashInputText" id="hashInputText"  placeholder="Escreva o Hash do Voto Aqui"/>
   </div>
+  <!--
   <div class="slightMargin">
     <label for="hashSaltText">&nbsp; Salt: &nbsp; </label>
     <input type="text" size="75" name="hashSaltText" id="hashSaltText" />
@@ -33,7 +34,7 @@
     <label for="chkChangeGenerator">Alterar n-ésimo número em 1 bit</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     <label for="optnumberToChange">&nbsp; Elemento a ser alterado: &nbsp; </label>
     <input type="text" size="3" name="optnumberToChange" id="optnumberToChange" />
-  </div>
+  </div> -->
   <div>
     <button id="updateAnimation">
       Forçar atualização da animação
@@ -47,7 +48,7 @@
   </div>
 
   <div id="svgDiv"></div>
-  <div id="maskedSvgDiv"></div>
+  <!--<div id="maskedSvgDiv"></div>-->
 
   <script type="text/javascript" src="../libs/mo.min.js"></script>
   <script type="text/javascript" src="../libs/jsbi.mjs"></script>

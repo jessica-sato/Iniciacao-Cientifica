@@ -31,3 +31,7 @@ button {
 .nextPage:hover{
   color:  black;
 }
+
+input:invalid {
+  border:1px solid #ff0000;
+}
