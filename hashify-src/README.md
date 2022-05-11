@@ -1,6 +1,6 @@
 # Código do Hashify
 
-Nessa pasta está contido o código modificao do Hashify, programa que trasforma hashes em animacoes. O [código original].(https://gitlab.com/jorgemiguelribeiro92/hashify/-/tree/master/) é de autoria de Jorge Miguel Ribeiro.
+Nessa pasta está contido o código modificao do Hashify, programa que trasforma hashes em animacoes. O [código original](https://gitlab.com/jorgemiguelribeiro92/hashify/-/tree/master/) é de autoria de Jorge Miguel Ribeiro.
 
 Para essa nova versão adapdata para o Helios Voting foram feitas as seguintes modificacões:
 * Retirou-se os campos adicionais na geracão da animacão
