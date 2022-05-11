@@ -10,3 +10,5 @@
 
 Repósitorio para armazenamento dos códigos e testes feitos durante a iniciação científica
 
+* Código em hashify-src é de autoria de Jorge Miguel Ribeiro. Veja também o [Repositório Original].(https://gitlab.com/jorgemiguelribeiro92/hashify/-/tree/master/)
+
