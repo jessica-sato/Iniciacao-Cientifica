@@ -9,6 +9,8 @@ function ascii_hexa(str){
 }
 
 function regenAnimation() {
+    var validateInput = document.getElementById("hashInputText")
+    if (!validateInput.checkValidity()) return;
     //let hash = $('#hashInputText').val();
     let hash = ascii_hexa(($('#hashInputText').val()).trim());
     //let salt = $('#hashSaltText').val();
