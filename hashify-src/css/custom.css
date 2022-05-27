@@ -32,6 +32,25 @@ button {
   color:  black;
 }
 
+input {
+  width: 75%;
+  border: 1.5px solid  #2f5fc7;
+  height: 35px;
+  border-radius: 3px;
+  padding: 1%;
+}
+
 input:invalid {
   border:1px solid #ff0000;
+  box-shadow: 0 0 0.5em #ff0000;
+}
+
+@media screen and (min-width: 1000px) {
+  input {
+    width: 50%;
+  }
+
+  input:invalid {
+    border:1px solid #ff0000;
+  }
 }
