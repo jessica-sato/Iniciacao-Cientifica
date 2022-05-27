@@ -94,6 +94,19 @@ function onChangeGenerator() {
     regenAnimation();
 }
 
+var intervalVar; //global variable to restart de setInterval function of the animation
+
+function loopAnimation(){
+  regenAnimation();
+  clearInterval(intervalVar)
+  // regenAnimation();
+  // while (true) {
+  //   setTimeout(() => { regenAnimation(); }, 5000);
+  // }
+  intervalVar = setInterval( regenAnimation, 3500);
+
+}
+
 function changeToVotePage(){
   window.location.href = "voto.html";
 }
@@ -103,12 +116,12 @@ function changeToElectionPage(){
 }
 
 // Setting up the js events
-$("#hashInputText").change(regenAnimation);
+$("#hashInputText").change(loopAnimation);
 // $("#hashSaltText").change(regenAnimation);
 // $("#optAnimate").change(regenAnimation);
 // $("#optThinLine").change(regenAnimation);
 // $("#optMovingLine").change(regenAnimation);
-$("#updateAnimation").click(regenAnimation);
+$("#updateAnimation").click(loopAnimation);
 $("#goToVotePage").click(changeToVotePage);
 $("#goToElectionPage").click(changeToElectionPage);
 
