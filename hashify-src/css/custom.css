@@ -14,6 +14,11 @@ button {
   white-space: pre-wrap;
 }
 
+#chkLoop{
+  width: 2em;
+  height: 17px;
+}
+
 #updateAnimation{
   font-weight: bolder;
   font-size: 16px;

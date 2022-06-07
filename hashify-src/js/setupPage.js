@@ -8,11 +8,16 @@ function ascii_hexa(str){
     return arr1.join('');
 }
 
+// Validates the input before running the animation
+function checkAndRun(){
+  var validateInput = document.getElementById("hashInputText");
+  if (!validateInput.checkValidity() || $('#hashInputText').val() == 0) return;
+  regenAnimation();
+}
+
 function regenAnimation() {
-    var validateInput = document.getElementById("hashInputText")
-    if (!validateInput.checkValidity()) return;
     //let hash = $('#hashInputText').val();
-    let hash = ascii_hexa(($('#hashInputText').val()).trim());
+    let hash = ascii_hexa($('#hashInputText').val());
     //let salt = $('#hashSaltText').val();
     let salt = "";
 
@@ -91,20 +96,22 @@ function onChangeGenerator() {
     // else {
     //     $("#optnumberToChange").prop('disabled', true);
     // }
-    regenAnimation();
+    //regenAnimation();
+    loopAnimation()
 }
 
-var intervalVar; //global variable to restart de setInterval function of the animation
+var intervalVar; //global variable to restart the setInterval function of the animation
 
 function loopAnimation(){
-  regenAnimation();
-  clearInterval(intervalVar)
-  // regenAnimation();
-  // while (true) {
-  //   setTimeout(() => { regenAnimation(); }, 5000);
-  // }
-  intervalVar = setInterval( regenAnimation, 3500);
+  clearInterval(intervalVar);
 
+  if ($("#chkLoop").prop('checked')){
+    checkAndRun();
+    intervalVar = setInterval(checkAndRun, 3500);
+  }
+  else{
+    checkAndRun();
+  }
 }
 
 function changeToVotePage(){
@@ -128,4 +135,4 @@ $("#goToElectionPage").click(changeToElectionPage);
 // $("#chkChangeGenerator").change(onChangeGenerator);
 // $("#optnumberToChange").change(regenAnimation);
 
-//$('#hashInputText').val("").change();
+//$('#hashInputText').val("m8+Dl1jRifz2jIRw13Sb+gomlFRQTLEhXyQkrRBl3WY").change();
