@@ -15,6 +15,7 @@ function checkAndRun(){
   regenAnimation();
 }
 
+// Original Function
 function regenAnimation() {
     //let hash = $('#hashInputText').val();
     let hash = ascii_hexa($('#hashInputText').val());
@@ -22,7 +23,7 @@ function regenAnimation() {
     let salt = "";
 
     let anim1 = hashify.seed(hash, salt);
-    anim1.prepAnimation("#svgDiv", [1, 4], [2, 2], { ...DEFAULT_OPTS, x: -175, y: 50 });
+    anim1.prepAnimation("#svgDiv", [1, 4], [2, 2], { ...DEFAULT_OPTS, x: 0, y: 50 });
 
     let hashalg = "SHA-256";
     //let dontModifyGeneratorElement = !$("#chkChangeGenerator").prop('checked');
