@@ -11,7 +11,7 @@ function ascii_hexa(str){
 // Validates the input before running the animation
 function checkAndRun(){
   var validateInput = document.getElementById("hashInputText");
-  if (!validateInput.checkValidity() || $('#hashInputText').val() == 0) return;
+  if (!validateInput.checkValidity() || $('#hashInputText').val() == '') return;
   regenAnimation();
 }
 
