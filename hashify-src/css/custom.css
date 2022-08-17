@@ -14,7 +14,7 @@ button {
   white-space: pre-wrap;
 }
 
-#chkLoop{
+#chkLoop, #chkb64toHex{
   width: 2em;
   height: 17px;
 }

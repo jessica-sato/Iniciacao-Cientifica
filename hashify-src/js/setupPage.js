@@ -1,11 +1,17 @@
-// function by: https://www.w3resource.com/javascript-exercises/javascript-string-exercise-27.php
-function ascii_hexa(str){
-    let arr1 = [];
-    for (let n = 0, l = str.length; n < l; n ++){
-        let hex = Number(str.charCodeAt(n)).toString(16);
-        arr1.push(hex);
-    }
-    return arr1.join('');
+
+function asciiToHex(str){
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    const hex = str.charCodeAt(i).toString(16);
+    result += (hex.length === 2 ? hex : '0' + hex);
+  }
+  return result;
+}
+
+//function by: https://stackoverflow.com/questions/39460182/decode-base64-to-hexadecimal-string-with-javascript
+function base64ToHex(str) {
+  const raw = window.atob(str);
+  return asciiToHex(raw);;
 }
 
 // Validates the input before running the animation
@@ -18,7 +24,10 @@ function checkAndRun(){
 // Original Function
 function regenAnimation() {
     //let hash = $('#hashInputText').val();
-    let hash = ascii_hexa($('#hashInputText').val());
+    let hash = asciiToHex($('#hashInputText').val());
+    if ($("#chkb64toHex").prop('checked')){
+      hash = base64ToHex($('#hashInputText').val());
+    }
     //let salt = $('#hashSaltText').val();
     let salt = "";
 
