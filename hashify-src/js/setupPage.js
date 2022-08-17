@@ -134,6 +134,8 @@ function changeToElectionPage(){
 
 // Setting up the js events
 $("#hashInputText").change(loopAnimation);
+$("#chkLoop").change(loopAnimation);
+$("#chkb64toHex").change(loopAnimation);
 // $("#hashSaltText").change(regenAnimation);
 // $("#optAnimate").change(regenAnimation);
 // $("#optThinLine").change(regenAnimation);
